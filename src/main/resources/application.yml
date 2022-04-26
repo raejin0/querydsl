@@ -7,13 +7,14 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: create          # drop and create table when application loaded. only in developing stage
+      ddl-auto: create            # drop and create table when application loaded. only in developing stage
     properties:
       hibernate:
-        #show_sql: true         # print in console (System.out.println) -> use hibernate.SQL
+        #show_sql: true           # print in console (System.out.println) -> use hibernate.SQL
         format_sql: true
+        use_sql_comments: true  # print jpql
 
 logging.level:
-  org.hibernate.SQL: debug    # leave as log
-  #org.hibernate.type: trace  # To check parameter, it's beeter to use p6spy library.
+  org.hibernate.SQL: debug        # leave as log
+  #org.hibernate.type: trace      # To check parameter, it's beeter to use p6spy library.
 
