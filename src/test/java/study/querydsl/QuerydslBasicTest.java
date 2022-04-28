@@ -666,7 +666,7 @@ public class QuerydslBasicTest {
 
 	// Bulk operation for update and remove
 	@Test
-	@Commit
+	//@Commit
 	public void bulkUpdate() {
 		// member1 = 10 -> DB & PersistentContext : member1
 		// member2 = 20 -> DB & PersistentContext : member2
